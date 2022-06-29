@@ -13,7 +13,6 @@ uses
 {$R fonts.res}
 
 function CheckFont: Boolean;
-
 var
   S: string;
 begin

@@ -87,22 +87,9 @@
         <UnitName Value="Main"/>
       </Unit>
       <Unit>
-        <Filename Value="fonttools.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="FontTools"/>
-      </Unit>
-      <Unit>
         <Filename Value="materialfont.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="MaterialFont"/>
-      </Unit>
-      <Unit>
-        <Filename Value="exportfrm.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="ExportForm"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ExportFrm"/>
       </Unit>
       <Unit>
         <Filename Value="materialtools.pas"/>
