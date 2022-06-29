@@ -1,0 +1,177 @@
+object TestForm: TTestForm
+  Left = 461
+  Height = 647
+  Top = 35
+  Width = 864
+  BorderStyle = bsDialog
+  Caption = 'Export to PNG Image'
+  ClientHeight = 607
+  ClientWidth = 856
+  DesignTimePPI = 120
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnPaint = FormPaint
+  OnShow = FormShow
+  Position = poScreenCenter
+  object PreviewLabel: TLabel
+    Left = 9
+    Height = 85
+    Top = 9
+    Width = 84
+    AutoSize = False
+    Caption = '󰀉'
+    Color = clDefault
+    Font.Color = clBlack
+    Font.Height = -84
+    Font.Name = 'Material Design Icons'
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    Visible = False
+  end
+  object SaveButton: TButton
+    Left = 263
+    Height = 32
+    Hint = 'Save the png image'
+    Top = 263
+    Width = 94
+    Caption = 'Save'
+    OnClick = SaveButtonClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object CloseButton: TButton
+    Left = 359
+    Height = 32
+    Hint = 'Close this dialog'
+    Top = 263
+    Width = 94
+    Caption = 'Close'
+    OnClick = CloseButtonClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object BrowseButton: TSpeedButton
+    Left = 417
+    Height = 36
+    Hint = 'Browse for a folder location'
+    Top = 136
+    Width = 36
+    Caption = '󰝰'
+    Font.Height = -31
+    Font.Name = 'Material Design Icons'
+    OnClick = BrowseButtonClick
+    ShowHint = True
+    ParentFont = False
+    ParentShowHint = False
+  end
+  object FolderEdit: TEdit
+    Left = 9
+    Height = 27
+    Top = 136
+    Width = 398
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    Text = 'FolderEdit'
+  end
+  object FileEdit: TEdit
+    Left = 9
+    Height = 27
+    Top = 208
+    Width = 326
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    Text = 'FileEdit'
+  end
+  object FolderLabel: TLabel
+    Left = 9
+    Height = 19
+    Top = 109
+    Width = 41
+    Caption = 'Folder:'
+    Color = clDefault
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object FileLabel: TLabel
+    Left = 9
+    Height = 19
+    Top = 181
+    Width = 57
+    Caption = 'Filename:'
+    Color = clDefault
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object SizeEdit: TEdit
+    Left = 344
+    Height = 27
+    Hint = 'The size of the image in pixels'
+    Top = 208
+    Width = 87
+    OnExit = SizeEditExit
+    OnKeyPress = SizeEditKeyPress
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    Text = 'SizeEdit'
+  end
+  object SizeLabel: TLabel
+    Left = 344
+    Height = 19
+    Top = 181
+    Width = 26
+    Caption = 'Size:'
+    Color = clDefault
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object SizeSpinner: TUpDown
+    Left = 431
+    Height = 27
+    Top = 208
+    Width = 22
+    Associate = SizeEdit
+    Max = 256
+    Min = 12
+    OnChanging = SizeSpinnerChanging
+    ParentShowHint = False
+    Position = 64
+    ShowHint = True
+    TabOrder = 5
+  end
+  object InfoLabel: TLabel
+    Left = 100
+    Height = 109
+    Top = 9
+    Width = 353
+    AutoSize = False
+    Caption = 'glyphFolderOpen \uF0770'
+    Color = clDefault
+    Layout = tlCenter
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+    WordWrap = True
+  end
+  object BrowseDialog: TSelectDirectoryDialog
+    Left = 338
+    Top = 50
+  end
+  object InfoTimer: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = InfoTimerTimer
+    Left = 266
+    Top = 50
+  end
+end
