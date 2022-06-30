@@ -42,8 +42,7 @@
       <Unit>
         <Filename Value="matview.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos Y="16"/>
+        <CursorPos X="19" Y="54"/>
         <UsageCount Value="163"/>
         <Loaded Value="True"/>
       </Unit>
@@ -54,7 +53,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="51" Y="342"/>
         <UsageCount Value="163"/>
         <Loaded Value="True"/>
@@ -85,10 +84,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ExportDlg"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="15" Y="53"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="284"/>
+        <CursorPos X="48" Y="291"/>
         <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit>
       <Unit>
         <Filename Value="fonttools.pas"/>
@@ -375,8 +378,26 @@
         <CursorPos X="15" Y="1518"/>
         <UsageCount Value="12"/>
       </Unit>
+      <Unit>
+        <Filename Value="../../../../Libraries/cross.codebot/source/codebot_controls/codebot.forms.floating.pas"/>
+        <UnitName Value="Codebot.Forms.Floating"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="217"/>
+        <CursorPos Y="249"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Libraries/cross.codebot/source/codebot/codebot.system.pas"/>
+        <UnitName Value="Codebot.System"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="419"/>
+        <CursorPos X="32" Y="447"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="15">
       <Position>
         <Filename Value="matview.lpr"/>
         <Caret Line="40" TopLine="37"/>
@@ -384,6 +405,60 @@
       <Position>
         <Filename Value="matview.lpr"/>
         <Caret Line="11" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="matview.lpr"/>
+        <Caret Line="16" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../Libraries/cross.codebot/source/codebot_controls/codebot.forms.floating.pas"/>
+        <Caret Line="249" TopLine="217"/>
+      </Position>
+      <Position>
+        <Filename Value="matview.lpr"/>
+        <Caret Line="32" Column="12"/>
+      </Position>
+      <Position>
+        <Filename Value="../../../../Libraries/cross.codebot/source/codebot/codebot.system.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="matview.lpr"/>
+        <Caret Line="31" Column="52" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="matview.lpr"/>
+        <Caret Line="33" Column="19" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="matview.lpr"/>
+        <Caret Line="54" Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret Line="64" Column="3" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret Line="343" TopLine="311"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret Line="64" Column="18" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret Line="324" Column="85" TopLine="297"/>
+      </Position>
+      <Position>
+        <Filename Value="exportdlg.pas"/>
+        <Caret Line="58" TopLine="34"/>
       </Position>
     </JumpHistory>
     <RunParams>

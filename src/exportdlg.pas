@@ -295,6 +295,12 @@ procedure TTestForm.UpdateGlyph;
 const
   MinCenter = 100;
   Margin = 8;
+{$ifdef linux}
+  IconScale = 0.6;
+{$endif}
+{$ifdef windows}
+  IconScale = 0.4;
+{$endif}
 var
   M: Integer;
   S: string;
@@ -313,8 +319,7 @@ begin
     PreviewLabel.Top := Margin;
     M := PreviewLabel.Height + Margin * 2;
   end;
-  //PreviewLabel.Font.Size := PreviewLabel.Scale96ToForm(FGlyphSize - Round((FGlyphSize) / 96) * 34);
-  PreviewLabel.Font.Size := Round(PreviewLabel.Scale96ToForm(FGlyphSize) * 0.4);
+  PreviewLabel.Font.Size := Round(PreviewLabel.Scale96ToForm(FGlyphSize) * IconScale);
   InfoLabel.Left := PreviewLabel.Left + PreviewLabel.Width + Margin;
   InfoLabel.Top := (M - InfoLabel.Height) div 2;
   InfoLabel.Width := ClientWidth - InfoLabel.Left - Margin;

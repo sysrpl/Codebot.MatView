@@ -29,9 +29,9 @@ begin
       Application.ProcessMessages;
       Sleep(100);
       {$ifdef linux}
-      S := GetEnvironmentVariable('HOME');
-      DirCreate(PathCombine(S, '.fonts');
-      S := PathCombine(S, '.fonts/' + MaterialFontFile);
+      S := PathCombine(StrEnvironmentVariable('HOME'), '.fonts');
+      DirCreate(S);
+      S := PathCombine(S, MaterialFontFile);
       ResSaveData('materialdesignicons', S);
       Result := True;
       {$endif}
@@ -49,9 +49,9 @@ begin
         ResSaveData('materialdesignicons', S);
         OpenDocument(S);
       end;
-      if Result then
-        Sleep(2000);
       {$endif}
+      if Result then
+        Sleep(3000);
     end;
   end;
 end;
