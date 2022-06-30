@@ -1,5 +1,5 @@
 # Material Design Icon Viewer
-*A cross platform desktop utility to search, copy, and embed material design icons
+*A cross platform desktop utility to search, copy, and embed material design icons*
 
 The Material Design Icons Viewer is a small free open source desktop utility to aid software developers. Its intended use is to help designers of software find and use icons from the Material Design Icon community led open source font.
 
