@@ -30,23 +30,23 @@ object MaterialIconForm: TMaterialIconForm
   end
   object IdentityLabel: TLabel
     Left = 232
-    Height = 13
+    Height = 16
     Top = 66
-    Width = 42
+    Width = 46
     Caption = 'Identity:'
     Color = clDefault
     ParentColor = False
   end
   object NameEdit: TEdit
     Left = 232
-    Height = 21
+    Height = 24
     Top = 87
     Width = 334
     TabOrder = 1
   end
   object SearchEdit: TEdit
     Left = 232
-    Height = 21
+    Height = 24
     Hint = 'Press (Down Arrow) for next match and (Up Arrow) for previous match'
     Top = 29
     Width = 341
@@ -58,9 +58,9 @@ object MaterialIconForm: TMaterialIconForm
   end
   object SearchLabel: TLabel
     Left = 232
-    Height = 13
+    Height = 16
     Top = 7
-    Width = 37
+    Width = 45
     Caption = 'Search:'
     Color = clDefault
     ParentColor = False
@@ -78,9 +78,9 @@ object MaterialIconForm: TMaterialIconForm
   end
   object CharLabel: TLabel
     Left = 580
-    Height = 13
+    Height = 16
     Top = 66
-    Width = 52
+    Width = 60
     Caption = 'Character:'
     Color = clDefault
     ParentColor = False
@@ -106,12 +106,11 @@ object MaterialIconForm: TMaterialIconForm
   end
   object NextButton: TSpeedButton
     Left = 580
-    Height = 28
+    Height = 29
     Hint = 'Search for next icon (Down Arrow)'
     Top = 29
-    Width = 28
+    Width = 29
     Caption = '󰁆'
-    Flat = True
     Font.Height = -25
     Font.Name = 'Material Design Icons'
     OnClick = NextButtonClick
@@ -121,12 +120,11 @@ object MaterialIconForm: TMaterialIconForm
   end
   object PriorButton: TSpeedButton
     Left = 609
-    Height = 28
+    Height = 29
     Hint = 'Search for previous icon (Up Arrow)'
     Top = 29
-    Width = 28
+    Width = 29
     Caption = '󰁞'
-    Flat = True
     Font.Height = -25
     Font.Name = 'Material Design Icons'
     OnClick = PriorButtonClick
@@ -136,12 +134,11 @@ object MaterialIconForm: TMaterialIconForm
   end
   object ExportButton: TSpeedButton
     Left = 638
-    Height = 28
+    Height = 29
     Hint = 'Export icon to a png image file'
     Top = 29
-    Width = 28
+    Width = 29
     Caption = '󰧸'
-    Flat = True
     Font.Height = -25
     Font.Name = 'Material Design Icons'
     OnClick = ExportButtonClick
@@ -151,12 +148,11 @@ object MaterialIconForm: TMaterialIconForm
   end
   object HelpButton: TSpeedButton
     Left = 666
-    Height = 28
+    Height = 29
     Hint = 'Open the help documentation'
     Top = 29
-    Width = 28
+    Width = 29
     Caption = '󰋗'
-    Flat = True
     Font.Height = -25
     Font.Name = 'Material Design Icons'
     OnClick = HelpButtonClick

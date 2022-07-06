@@ -361,6 +361,7 @@ begin
   if FLargeGlyph = nil then
   begin
     FLargeGlyph := NewFont(CharEdit.Font);
+    FLargeGlyph.Quality := fqAntialiased;
     FLargeGlyph.Color := clWindowText;
     FLargeGlyph.Size := 30;
     if GetPlatform = platformWindows then
@@ -390,6 +391,7 @@ begin
   begin
     FGlyph := NewFont(CharEdit.Font);
     FGlyph.Color := clWindowText;
+    FGlyph.Quality := fqAntialiased;
     FGlyph.Size := 24;
     if GetPlatform = platformWindows then
        FGlyph.Size := Round(FGlyph.Size * 1.5);

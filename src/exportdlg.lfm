@@ -13,7 +13,6 @@ object TestForm: TTestForm
   OnPaint = FormPaint
   OnShow = FormShow
   Position = poScreenCenter
-  LCLVersion = '2.3.0.0'
   object PreviewLabel: TLabel
     Left = 7
     Height = 68
@@ -21,15 +20,12 @@ object TestForm: TTestForm
     Width = 67
     AutoSize = False
     Caption = '󰀉'
-    Color = clDefault
     Font.Color = clBlack
     Font.Height = -67
     Font.Name = 'Material Design Icons'
-    ParentColor = False
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    Transparent = False
     Visible = False
   end
   object SaveButton: TButton
@@ -40,7 +36,6 @@ object TestForm: TTestForm
     Width = 75
     Caption = 'Save'
     OnClick = SaveButtonClick
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
@@ -53,7 +48,6 @@ object TestForm: TTestForm
     Width = 75
     Caption = 'Close'
     OnClick = CloseButtonClick
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -74,10 +68,9 @@ object TestForm: TTestForm
   end
   object FolderEdit: TEdit
     Left = 7
-    Height = 28
+    Height = 24
     Top = 109
     Width = 319
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
@@ -85,10 +78,9 @@ object TestForm: TTestForm
   end
   object FileEdit: TEdit
     Left = 7
-    Height = 28
+    Height = 24
     Top = 167
     Width = 261
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
@@ -96,33 +88,25 @@ object TestForm: TTestForm
   end
   object FolderLabel: TLabel
     Left = 7
-    Height = 17
+    Height = 16
     Top = 87
-    Width = 48
+    Width = 40
     Caption = 'Folder:'
-    Color = clDefault
-    ParentColor = False
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    Transparent = False
   end
   object FileLabel: TLabel
     Left = 7
-    Height = 17
+    Height = 16
     Top = 145
-    Width = 65
+    Width = 57
     Caption = 'Filename:'
-    Color = clDefault
-    ParentColor = False
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    Transparent = False
   end
   object SizeEdit: TEdit
     Left = 275
-    Height = 28
+    Height = 24
     Hint = 'The size of the image in pixels'
     Top = 167
     Width = 70
@@ -136,21 +120,17 @@ object TestForm: TTestForm
   end
   object SizeLabel: TLabel
     Left = 275
-    Height = 17
+    Height = 16
     Top = 145
-    Width = 31
+    Width = 30
     Caption = 'Size:'
-    Color = clDefault
-    ParentColor = False
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
-    Transparent = False
   end
   object SizeSpinner: TUpDown
-    Left = 312
-    Height = 25
-    Top = 151
+    Left = 345
+    Height = 24
+    Top = 167
     Width = 17
     Associate = SizeEdit
     Max = 256
@@ -168,10 +148,7 @@ object TestForm: TTestForm
     Width = 283
     AutoSize = False
     Caption = 'glyphFolderOpen \uF0770'
-    Color = clDefault
     Layout = tlCenter
-    ParentColor = False
-    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     WordWrap = True
