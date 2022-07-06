@@ -119,6 +119,9 @@ begin
   if GetPlatform = platformWindowsXP then
     R.Y := R.Y + Round(PreviewLabel.Scale96ToForm(FGlyphSize) * 0.03);
   F := NewFont(PreviewLabel.Font);
+  if GetPlatform = platformWindows then
+     F.Size := Round(F.Size * 1.5);
+
   F.Color := clWindowText;
   F.Quality := fqAntialiased;
   S.TextOut(F, PreviewLabel.Caption, R, drCenter);
@@ -165,8 +168,10 @@ begin
   if GetPlatform = platformWindowsXP then
     R.Y := R.Y + Round(PreviewLabel.Scale96ToForm(FGlyphSize) * 0.03);
   Font := NewFont(PreviewLabel.Font);
+  if GetPlatform = platformWindows then
+     Font.Size := Round(Font.Size * 1.5);
   Font.Quality := fqAntialiased;
-  B.Surface.TextOut(NewFont(PreviewLabel.Font), PreviewLabel.Caption, R, drCenter);
+  B.Surface.TextOut(Font, PreviewLabel.Caption, R, drCenter);
   try
     B.SaveToFile(PathCombine(D, F));
     SaveState;

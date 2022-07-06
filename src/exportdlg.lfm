@@ -1,29 +1,29 @@
 object TestForm: TTestForm
   Left = 461
-  Height = 572
+  Height = 518
   Top = 35
-  Width = 763
+  Width = 691
   BorderStyle = bsDialog
   Caption = 'Export to PNG Image'
-  ClientHeight = 572
-  ClientWidth = 763
-  DesignTimePPI = 106
+  ClientHeight = 518
+  ClientWidth = 691
   KeyPreview = True
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   OnPaint = FormPaint
   OnShow = FormShow
   Position = poScreenCenter
+  LCLVersion = '2.3.0.0'
   object PreviewLabel: TLabel
-    Left = 8
-    Height = 75
-    Top = 8
-    Width = 74
+    Left = 7
+    Height = 68
+    Top = 7
+    Width = 67
     AutoSize = False
     Caption = '󰀉'
     Color = clDefault
     Font.Color = clBlack
-    Font.Height = -74
+    Font.Height = -67
     Font.Name = 'Material Design Icons'
     ParentColor = False
     ParentFont = False
@@ -33,11 +33,11 @@ object TestForm: TTestForm
     Visible = False
   end
   object SaveButton: TButton
-    Left = 232
-    Height = 28
+    Left = 210
+    Height = 25
     Hint = 'Save the png image'
-    Top = 232
-    Width = 83
+    Top = 210
+    Width = 75
     Caption = 'Save'
     OnClick = SaveButtonClick
     ParentFont = False
@@ -46,11 +46,11 @@ object TestForm: TTestForm
     TabOrder = 0
   end
   object CloseButton: TButton
-    Left = 317
-    Height = 28
+    Left = 287
+    Height = 25
     Hint = 'Close this dialog'
-    Top = 232
-    Width = 83
+    Top = 210
+    Width = 75
     Caption = 'Close'
     OnClick = CloseButtonClick
     ParentFont = False
@@ -59,13 +59,13 @@ object TestForm: TTestForm
     TabOrder = 1
   end
   object BrowseButton: TSpeedButton
-    Left = 368
-    Height = 32
+    Left = 333
+    Height = 29
     Hint = 'Browse for a folder location'
-    Top = 120
-    Width = 32
+    Top = 109
+    Width = 29
     Caption = '󰝰'
-    Font.Height = -27
+    Font.Height = -24
     Font.Name = 'Material Design Icons'
     OnClick = BrowseButtonClick
     ShowHint = True
@@ -73,10 +73,10 @@ object TestForm: TTestForm
     ParentShowHint = False
   end
   object FolderEdit: TEdit
-    Left = 8
+    Left = 7
     Height = 28
-    Top = 120
-    Width = 352
+    Top = 109
+    Width = 319
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
@@ -84,10 +84,10 @@ object TestForm: TTestForm
     Text = 'FolderEdit'
   end
   object FileEdit: TEdit
-    Left = 8
+    Left = 7
     Height = 28
-    Top = 184
-    Width = 288
+    Top = 167
+    Width = 261
     ParentFont = False
     ParentShowHint = False
     ShowHint = True
@@ -95,9 +95,9 @@ object TestForm: TTestForm
     Text = 'FileEdit'
   end
   object FolderLabel: TLabel
-    Left = 8
+    Left = 7
     Height = 17
-    Top = 96
+    Top = 87
     Width = 48
     Caption = 'Folder:'
     Color = clDefault
@@ -108,9 +108,9 @@ object TestForm: TTestForm
     Transparent = False
   end
   object FileLabel: TLabel
-    Left = 8
+    Left = 7
     Height = 17
-    Top = 160
+    Top = 145
     Width = 65
     Caption = 'Filename:'
     Color = clDefault
@@ -121,11 +121,11 @@ object TestForm: TTestForm
     Transparent = False
   end
   object SizeEdit: TEdit
-    Left = 304
+    Left = 275
     Height = 28
     Hint = 'The size of the image in pixels'
-    Top = 184
-    Width = 77
+    Top = 167
+    Width = 70
     OnExit = SizeEditExit
     OnKeyPress = SizeEditKeyPress
     ParentFont = False
@@ -135,9 +135,9 @@ object TestForm: TTestForm
     Text = 'SizeEdit'
   end
   object SizeLabel: TLabel
-    Left = 304
+    Left = 275
     Height = 17
-    Top = 160
+    Top = 145
     Width = 31
     Caption = 'Size:'
     Color = clDefault
@@ -148,10 +148,10 @@ object TestForm: TTestForm
     Transparent = False
   end
   object SizeSpinner: TUpDown
-    Left = 381
-    Height = 28
-    Top = 184
-    Width = 19
+    Left = 312
+    Height = 25
+    Top = 151
+    Width = 17
     Associate = SizeEdit
     Max = 256
     Min = 12
@@ -162,12 +162,13 @@ object TestForm: TTestForm
     TabOrder = 5
   end
   object InfoLabel: TLabel
-    Left = 88
-    Height = 96
-    Top = 8
-    Width = 312
+    Left = 80
+    Height = 87
+    Top = 7
+    Width = 283
     AutoSize = False
     Caption = 'glyphFolderOpen \uF0770'
+    Color = clDefault
     Layout = tlCenter
     ParentColor = False
     ParentFont = False
@@ -176,14 +177,14 @@ object TestForm: TTestForm
     WordWrap = True
   end
   object BrowseDialog: TSelectDirectoryDialog
-    Left = 160
-    Top = 232
+    Left = 145
+    Top = 210
   end
   object InfoTimer: TTimer
     Enabled = False
     Interval = 10000
     OnTimer = InfoTimerTimer
-    Left = 48
-    Top = 232
+    Left = 43
+    Top = 210
   end
 end

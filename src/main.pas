@@ -354,11 +354,17 @@ var
   I: Integer;
 begin
   if FFont = nil then
+  begin
     FFont := NewFont(Self.Font);
+    FFont.Color := clWindowText;
+  end;
   if FLargeGlyph = nil then
   begin
     FLargeGlyph := NewFont(CharEdit.Font);
+    FLargeGlyph.Color := clWindowText;
     FLargeGlyph.Size := 30;
+    if GetPlatform = platformWindows then
+       FLargeGlyph.Size := Round(FLargeGlyph.Size * 1.5);
   end;
   GlyphGrid.DrawRectState(Surface, Rect, State);
   I := Col + Row * GlyphGrid.ColCount;
@@ -376,11 +382,17 @@ var
   S: string;
 begin
   if FFont = nil then
+  begin
     FFont := NewFont(Self.Font);
+    FFont.Color := clWindowText;
+  end;
   if FGlyph = nil then
   begin
     FGlyph := NewFont(CharEdit.Font);
+    FGlyph.Color := clWindowText;
     FGlyph.Size := 24;
+    if GetPlatform = platformWindows then
+       FGlyph.Size := Round(FGlyph.Size * 1.5);
   end;
   GlyphList.DrawRectState(Surface, Rect, State);
   S := MaterialGlyphs[Index];
